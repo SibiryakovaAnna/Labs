@@ -33,7 +33,7 @@ int main() {
     for (int i = 0; i < l; i++)
         scanf("%d", &a[i]);
 
-    quickSort(start, end, l);
+    quickSort(start, end, &l);
 
     for (int i = 0; i < l; i++)
         printf("%d ", a[i]);
