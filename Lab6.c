@@ -27,16 +27,17 @@ void quickSort (int start, int end, int *a){
 int main() {
     int *a;
     int l, q, start = 0, end;
-    scanf("%d",l);
+    scanf("%d",&l);
     end = l - 1;
     a = (int*)malloc(l * sizeof(int));
     for (int i = 0; i < l; i++)
         scanf("%d", &a[i]);
 
-    quickSort(start, end, &l);
+    quickSort(start, end, a);
 
     for (int i = 0; i < l; i++)
         printf("%d ", a[i]);
+
     free(a);
     return 0;
 }
